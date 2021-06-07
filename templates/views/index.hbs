@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlink}}
+    <title>Web Corner it solutions</title>
+</head>
+
+<body>
+    <div class="header" id="topheader">
+        {{>navbar}}
+        <section class="header-section">
+            <div class="center-div">
+                <h1 class="font-weight-bold">Let the people know about your business</h1>
+                <p>We create the best websites in affordable price</p>
+                <div class="header-buttons">
+                    <a data-toggle="modal" data-target="#exampleModal">REQUEST A QUOTE</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    {{>requestquotes}}
+    <!-- *******what we do for you start******** -->
+    <section class="whatwedo-sec">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">WHAT WE DO FOR YOU</h1>
+            <p>Web Corner Technology is a India Based <span class="font-weight-bold">web application development
+                    company</span> will provide you all the e-business solutions which will lead
+                you effectively across India. We works as Software Development Company
+                in India for your business or firms and has so many <span class="font-weight-bold">unique ideas for
+                    Website Designing</span> and technique to introduce you effectively website
+                develop, delivers IT exellence at a <span class="font-weight-bold">very affordable price</span>.
+                So come join us and feel the change of amazing e- business solution
+                and let the people know you with our <span class="font-weight-bold">Website
+                    Development Company in India</span>.</p>
+        </div>
+    </section>
+    <!-- *******what we do for you end******** -->
+
+    <!-- ****** three extra div starts ****** -->
+    <section class="header-servicediv" id="serviceid">
+        <div class="container service-cont">
+            <h1>Below are the featured services we provide</h1>
+            <div class="row">
+                <div class="servicediv col-lg-4 col-md-4 col-12">
+                    <i class="fa-5x fa fa-trophy icn" aria-hidden="true"></i>
+                    <h2>Awesome Design</h2>
+                    <p>As Website Development Company in India our Workes are high-performing, user friendly and digitally transformative.</p>
+                </div>
+                <div class="servicediv col-lg-4 col-md-4	 col-12">
+                    <i class="fa-5x fa fa-desktop icn" aria-hidden="true"></i>
+                    <h2>Website</h2>
+                    <p>We are expert web application development company in India and offers a variety of website design and development services.</p>
+                </div>
+                <div class="servicediv col-lg-4 col-md-4 col-12">
+                    <i class="fa-5x fa fa-android icn" aria-hidden="true"></i>
+                    <h2>Apps</h2>
+                    <p>Our team will design & develop, build, and support an elegant app that’s tailored specifically to your business needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{!-- welcome offer section start --}}
+    {{!-- <section class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>WELCOME OFFER</h2>
+                    <h3>Upgrade Your Business To The Next Level @  
+                        <div class="slidingVertical">
+                            <span>1999/-</span>
+                            <span>2999/-</span>
+                            <span>4999/-</span>
+                            <span>9999/-</span>
+                            <span>14999/-</span>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    {{>footer}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        })
+
+        myButton = document.getElementById("myBtn");
+
+        //when the user scroll down 20px from top of the document , show the button.
+        window.onscroll = function() {
+            scrollFunction();
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myButton.style.display = "block";
+            } else {
+                myButton.style.display = "none";
+            }
+        }
+        // when the user click on the buton, scroll to the top of the document.  
+        function topFunction() {
+            document.body.scrollTop = 0; // for safari
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

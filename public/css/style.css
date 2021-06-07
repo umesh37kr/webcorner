@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+a{text-decoration: none;}
+
+a:hover{text-decoration: none;}
+
+li{list-style: none;}
+
+p{
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #606060;
+}
+.extradiv h2, .servicediv h2{
+	font-size: 0.9rem;
+	margin: 20px 0 15px 0;
+	line-height: 1.1;
+	font-weight: bold;
+	word-spacing: 4px;
+}
+i{
+	color: #2fccd0;
+}
+
+/***************** actual class css start *****************/
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to bottom right,#300088, rgba(162, 0, 255, 0.835)), url("../images/pc3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.navbar:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.9;
+	z-index: -1;
+	background: rgb(48, 0, 136);
+}
+
+.nav-item a{
+	color: #fff;
+	font-weight: bold;
+}
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+.header-section p{
+	width:80%;
+	margin: auto;
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a{
+	border: 1px solid #fff;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	font-height: 1.4;
+	text-align: center;
+}
+.header-buttons a:hover{
+	color: #50d1c0;
+	background-color: rgb(100, 94, 100);
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+	font-size: 1.3rem;
+	padding: 10px 0 20px 0;
+	color: white; 
+}
+/* what do we section start */
+.whatwedo-sec{
+	padding-top: 30px;
+	/* margin-bottom: 30px; */
+} 
+.whatwedo-sec h1{
+	font-family: 'Acme', sans-serif;
+	font-size: 2.9rem !important;
+	background: linear-gradient(to right, #00cece 0%, #42058d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.whatwedo-sec p{
+	text-align: justify;
+	font-size: 1.1rem;
+}
+/* what do we section end */   
+ 
+/************** service div start ******************/
+.header-servicediv{
+	width: 100%;
+	height: auto;
+	margin: 10px 0;
+	text-align: center;
+}
+.servicediv{
+	background-color: #fff;
+	border: medium none;
+	padding: 50px none;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+.service-cont h1{
+	font-family: 'Acme', sans-serif;
+	text-align: left;
+	margin: 30px;
+	font-size:1.4rem;
+
+}
+.servicediv h2{
+	font-family: 'Acme', sans-serif;
+	font-size: 1.9rem !important;
+	background: linear-gradient(to right, #00cece 0%, #42058d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.servicediv p{
+	text-align: justify;
+	font-size: 1.1rem;
+}
+.servicediv .icn{
+	background: linear-gradient(to right, rgb(48, 0, 136), rgba(162, 0, 255, 0.835));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.servicediv i{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/************** service div end ******************/
+
+/************** contact us css start ******************/
+.contact-header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to bottom right,#300088, rgba(162, 0, 255, 0.835)), url("../images/contact.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.contact-header:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%, #3eebdd 0%, #16c9f6 100%) 
+}
+.contact-form .form-control{
+    border-radius:0.5rem;
+}
+.contact-form form{
+	margin-top: 14%;
+	margin-left: 14%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 70%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #3a498b;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.contactli i{
+	font-size: 1.6rem;
+	margin-right: 10%;
+	color: rgb(48, 0, 136);
+}
+.contact-form .getintouch{
+	margin-top: 14%;
+	margin-left: 14%;
+}
+.contact-form h2{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    color: #0062cc;
+}
+/************** contact us css end ******************/
+/* about section start */
+.about-header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to bottom right,#300088, rgba(162, 0, 255, 0.835)), url("../images/about.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.about-header:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%, #3eebdd 0%, #16c9f6 100%); 
+}
+.aboutus{
+	padding: 20px;
+}
+.aboutus-row h2{
+	font-family: 'Acme', sans-serif;
+	font-size: 2.2rem !important;
+	color:#01284d;
+}
+.aboutus-row h2:after {
+	content: " ";
+	border-bottom:4px solid rgb(99, 127, 153);
+	width:200px;
+	display:block;
+}
+.aboutus-row p{
+	text-align: justify;
+}
+.mission-row p{
+	text-align: justify;
+}
+.mission-row h2{
+	font-family: 'Acme', sans-serif;
+	font-size: 2.2rem !important;
+	color:#01284d;
+}
+.mission-row h2:after {
+	content: " ";
+	border-bottom:4px solid rgb(99, 127, 153);
+	width:250px;
+	display:block;
+}
+/* about section end */
+/************** footer css start ******************/
+.footersection{
+	width: 100%;
+	height: auto;
+	padding: 70px 0px 20px 0px;
+	padding-left: 15px;
+	background-color: #3a498b;
+	position: relative;
+}
+.footersection p{
+	color: #fff;
+}
+.footersection li a{
+	font-size: 1.1rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.footersection h3{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff!important;
+	margin-top: 25px;
+	text-transform: uppercase;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.footersection .row{
+	border-bottom:1px solid rgb(180, 180, 180);
+}
+.footercontact{
+	font-size:1.1rem;
+	color: #fff;
+	line-height: 1.6;
+	font-weight:400;
+}
+.footercontact i{
+	color: #fff;
+}
+#myBtn{
+	display: none;
+	position: fixed;
+	color: #fff;
+	padding: 10px;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border:none;
+	background: #3a498b;
+	border-radius: 10px;
+}
+#myBtn:hover{
+	background: #606060;
+}
+/************** footer css end ******************/
+
+/************** media quries ******************/
+
+@media(max-width: 768px){
+	.nav-item{
+		text-align: center!important;
+	}
+
+	.pricing, .happyclients, .contactus{
+		height: auto;
+		margin-top: 50px;
+	}
+	.card-second{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+	.contactus p{
+		padding: 0 50px;
+	}
+	.footersection:nth-child(2){
+		text-align: left!important;
+	}
+	.footersection{
+		margin: 30px 0;
+	}
+	.count{
+		font-size: 2rem;
+	}
+}

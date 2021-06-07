@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlink}}
+    <title>about - web corner</title>
+</head>
+
+<body>
+    <div class="about-header" id="topheader">
+        {{>navbar}}
+        <section class="header-section">
+            <div class="center-div">
+                <h1 class="font-weight-bold">Bring Your Business On Web</h1>
+                <p>Our Basic Motive Is To Enable Millions Of People Around 
+                  The World To Unlock The Power Of Internet and Boost Up
+                   Their Business To The Next Level.</p>
+                <div class="header-buttons">
+                     <a data-toggle="modal" data-target="#exampleModal">REQUEST A QUOTE</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    {{>requestquotes}}
+    <!-- ********************** about us start *************** -->
+   <div class="container aboutus">
+     <div class="row">
+       <div class="col-12 aboutus-row">
+         <h2>About Us</h2>
+         <p>  We are Garhwa based website designing and web application 
+           development company. Web Corner is a professional Web Designing & Web 
+           Development Company in Garhwa Jharkhand. we deals in mainly in website
+           designing services and have very good hand in 
+           website development, mobile application development, maintenance 
+           of websites and Web Application Development Company in Garhwa. Web Corner is a 
+           well known name in IT and Digital Marketing sector that provides 
+           amazingly excellentn IT solutions throughout the India with Since year 2020.
+           </p>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-12 mission-row">
+         <h2>Mission & Vision</h2>
+         <p>  Our mission is to enhance the growth of our clients business 
+           with innovative web development and Digital Marketing Services. 
+           We deliver high-quality services as website designing company in 
+           Garhwa and that creates value and give advantage to our customers
+           as a best web application development company in Garhwa.
+
+          Our vision we aspire to be a reputed website designing and web 
+          development Company in Garhwa, India that anchor technology to 
+          deliver customized and cost effective web site design and 
+          development services. We believe to do work with the focus on 
+          emerging technologies and fulfilling client's requirements to 
+          have long term partnerships through mutual trust and loyalty.
+           </p>
+       </div>
+     </div>
+   </div>
+    <!-- ********************** about us end *************** -->
+    {{>footer}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        })
+
+        myButton = document.getElementById("myBtn");
+
+        //when the user scroll down 20px from top of the document , show the button.
+        window.onscroll = function() {
+            scrollFunction();
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myButton.style.display = "block";
+            } else {
+                myButton.style.display = "none";
+            }
+        }
+        // when the user click on the buton, scroll to the top of the document.  
+        function topFunction() {
+            document.body.scrollTop = 0; // for safari
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

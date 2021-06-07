@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlink}}
+    <title>contact - web corner</title>
+</head>
+
+<body>
+    <div class="contact-header" id="topheader">
+        {{>navbar}}
+        <section class="header-section">
+            <div class="center-div">
+                <h1 class="font-weight-bold">Bring Your Business On Web</h1>
+                <p>Get started for a great business with us</p>
+                <div class="header-buttons">
+                     <a data-toggle="modal" data-target="#exampleModal">REQUEST A QUOTE</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    {{>requestquotes}}
+    <!-- ********************** Contact us start *************** -->
+    <div class="container contact-form">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-10">
+                <form action="/contact" method="post">
+                    <h3>Book Your Consultation Now</h3>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit"class="btnContact" value="Send Message" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-10">
+                <div class="getintouch">
+                    <h2>Get In Touch</h2>
+                    <div class="contactli">
+                        <p>Reach Us</p>
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Meral 822133</li><br>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>contact@webcorner.in</li><br>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> 8223892359</li><br>
+                            <li><i class="fa fa-whatsapp" aria-hidden="true"></i> 8223892359</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ********************** Contact us end *************** -->
+    {{>footer}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        })
+
+        myButton = document.getElementById("myBtn");
+
+        //when the user scroll down 20px from top of the document , show the button.
+        window.onscroll = function() {
+            scrollFunction();
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myButton.style.display = "block";
+            } else {
+                myButton.style.display = "none";
+            }
+        }
+        // when the user click on the buton, scroll to the top of the document.  
+        function topFunction() {
+            document.body.scrollTop = 0; // for safari
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
